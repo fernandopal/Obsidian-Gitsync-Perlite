@@ -39,7 +39,7 @@ services:
 
   perlite-git-sync:
     # self-built image from https://github.com/kubernetes/git-sync
-    image: l4rm4nd/git-sync:latest
+    image: alterem/git-sync:latest
     container_name: perlite-git-sync
     restart: unless-stopped
     user: 1000:1000
@@ -47,7 +47,7 @@ services:
       #- GIT_SYNC_USERNAME=<USERNAME> # optional; your github username if repo is private
       #- GIT_SYNC_PASSWORD=<ACCESS-TOKEN> # optional; your github access token if repo is private
       - GIT_SYNC_PERIOD=30s
-      - GIT_SYNC_REPO=https://github.com/l4rm4nd/Obsidian-Gitsync-Perlite # your github repository to sync
+      - GIT_SYNC_REPO=https://github.com/fernandopal/Obsidian-Gitsync-Perlite # your github repository to sync
       - GIT_SYNC_ROOT=/tmp/git/root # do not change this
     volumes:
       - ./repository:/tmp/git # volume bind mount path to store synced github repo data
