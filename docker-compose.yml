@@ -2,7 +2,7 @@ version: "3.9"
 
 services:
   perlite:
-    image: fpalomomoreno/perlite:sha-1207170
+    image: fpalomomoreno/perlite:sha-d843fa6
     container_name: perlite
     restart: unless-stopped
     environment:
@@ -18,7 +18,7 @@ services:
   perlite-web:
     #build:
     #    context: ./web
-    image: l4rm4nd/perlite_web:stable
+    image: fpalomomoreno/perlite_web:sha-d843fa6
     container_name: perlite-web
     restart: unless-stopped
     ports:
