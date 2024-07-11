@@ -2,7 +2,7 @@ version: "3.9"
 
 services:
   perlite:
-    image: fpalomomoreno/perlite:latest
+    image: fpalomomoreno/perlite:sha-1207170
     container_name: perlite
     restart: unless-stopped
     environment:
