@@ -39,7 +39,7 @@ services:
 
   perlite-git-sync:
     # self-built image from https://github.com/kubernetes/git-sync
-    image: alterem/git-sync:latest
+    image: alterem/git-sync:v3.4.0
     container_name: perlite-git-sync
     restart: unless-stopped
     user: 1000:1000
